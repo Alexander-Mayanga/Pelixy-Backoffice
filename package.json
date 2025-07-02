@@ -1,0 +1,23 @@
+{
+  "name": "pelixy-backend",
+  "version": "1.0.0",
+  "description": "Backend de Pelixy usando Node.js y PostgreSQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^4.18.2",
+    "multer": "^2.0.1",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
