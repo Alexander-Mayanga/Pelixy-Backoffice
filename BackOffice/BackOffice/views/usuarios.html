@@ -1,0 +1,77 @@
+<section id="usuarios">
+    <div class="wrapper">
+        <div class="container container_lista">
+            <img src="../img/report_usuario.png" alt="Imagen de usuarios">
+            <span>Lista de Usuarios</span>
+        </div>
+
+        <button class="container container_agregar btn-abrir-modal">
+            <img src="../img/agregar.png" alt="Imagen de agregar usuarios">
+            <span>Agregar Usuario</span>
+        </button>
+    </div>
+
+    <table class="tabla-usuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>País</th>
+                <th>Avatar</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="body-usuarios">
+          
+        </tbody>
+    </table>
+</section>
+
+<div id="modal-usuario" class="modal oculto">
+  <div class="modal-contenido">
+    <span id="btn-cerrar-modal" class="cerrar">&times;</span>
+    <h2>Agregar Usuario</h2>
+
+    <form id="form-usuario" class="formulario-modal">
+      <div class="grupo-form">
+        <label>Nombre</label>
+        <input type="text" name="nombre" required>
+      </div>
+
+      <div class="grupo-form">
+        <label>Apellido</label>
+        <input type="text" name="apellido" required>
+      </div>
+
+      <div class="grupo-form">
+        <label>Correo</label>
+        <input type="email" name="correo" required>
+      </div>
+
+      <div class="grupo-form">
+        <label>País</label>
+        <input type="text" name="pais" required>
+      </div>
+
+      <div class="grupo-form">
+        <label>Contraseña</label>
+        <input type="password" name="contraseña" required>
+      </div>
+
+      <div class="grupo-form">
+        <label>Avatar</label>
+        <input type="file" id="input-avatar" accept="image/*">
+        <input type="hidden" name="avatar_url" id="avatar_url">
+        <div id="preview-avatar" class="preview-avatar oculto">
+          <img src="" alt="Vista previa del avatar" />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-guardar">Guardar</button>
+    </form>
+  </div>
+</div>
+<script src="../js/usuarios.js"></script>
