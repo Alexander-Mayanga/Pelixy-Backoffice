@@ -67,11 +67,15 @@ El backoffice de Pelixy ofrece las siguientes funciones clave:
 
 ✅ Autenticación segura para el acceso al panel  
 ✅ Dashboard inicial con resumen del sistema  
+✅ Reportes visuales:
+- Estadísticas generales
+- Conteo de películas, usuarios y comentarios
+  
 ✅ Gestión de usuarios:
 - Ver usuarios registrados
 - Editar información
 - Eliminar usuarios
-- Ver avatar y estado
+- Ver avatar
 
 ✅ Gestión de películas:
 - Agregar nuevas películas (con título, descripción, imagen, género, etc.)
@@ -80,38 +84,21 @@ El backoffice de Pelixy ofrece las siguientes funciones clave:
 
 ✅ Gestión de comentarios:
 - Visualizar todos los comentarios de los usuarios
-- Editar o eliminar comentarios inapropiados
+- Editar o eliminar comentarios 
 
-✅ Reportes visuales:
-- Estadísticas generales
-- Conteo de películas, usuarios y comentarios
-- Actividad reciente
+✅ Gestión de calificaciones:
+- Ver calificaciones aplicadas por el usuario
 
 ✅ Menú lateral persistente y navegación clara  
 ✅ Diseño responsivo (funciona en PC, tablets y móviles)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🟨 6. Arquitectura general
-Este sistema sigue una arquitectura cliente-servidor desacoplada:
+🟫 6. Tecnologías utilizadas
 
-- Frontend: React + Vite + Material UI
-- Backend: Node.js + Express
-- Base de datos: PostgreSQL
-  
-🔗 El backoffice se conecta al backend del sistema móvil a través de peticiones HTTP (REST API).  
-🔧 La arquitectura es desacoplada: frontend (React) + backend (Node.js + PostgreSQL).
-
-🟫 7. Tecnologías utilizadas
 🧠 Frontend:
 
-React + Vite ⚛️
-
-Material UI 🎨
-
-React Router DOM 🧭
-
-Axios 🔗
+Html + Css + Javascript  ⚛️ 🎨
 
 🛠 Backend:
 
@@ -129,11 +116,7 @@ GitHub (repositorio)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🟥 7. Estructura del repositorio
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-🟦 8. Licencia
+🟦 7. Licencia
 Este proyecto es de uso académico.
 Prohibida su reproducción para fines comerciales sin autorización.
 
@@ -141,7 +124,7 @@ Prohibida su reproducción para fines comerciales sin autorización.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ 9. ¿Qué hace el proyecto?
+✅ 8. ¿Qué hace el proyecto?
 Permite a administradores ingresar de forma segura
 
 Visualiza toda la actividad registrada por usuarios de la app
@@ -160,14 +143,13 @@ Mejora la eficiencia del equipo técnico al proporcionar una vista centralizada 
 1. Clona el repositorio:
 git clone https://github.com/Alexander-Mayanga/pelixy-backoffice.git
 
-2. Instala las dependencias:
-   npm install
+2. Seleccionar el backemd
+   Proyecto BackOffice Web\Pelixy_Backend
    
 3. Ejecuta el entorno local:
-   npm run dev
+    node app.js
 
-4. Abre tu navegador en:
-   http://localhost:5173
+4. ejecuta el index.html
    
 ☑ Asegúrate que el backend esté corriendo en http://localhost:3000 o IP local.
 
